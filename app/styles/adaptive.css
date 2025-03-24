@@ -1,0 +1,45 @@
+.mobile-hide {
+	display: inherit;
+}
+
+.mobile-show {
+	display: none;
+}
+
+@media (max-width: 576px) {
+	:root {
+		--default-height: 60px;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	.mobile-show {
+		display: inherit;
+	}
+
+	.block_01,
+	.block_05,
+	.block_02 {
+		flex-direction: column;
+	}
+
+	.block_04 .d-flex {
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.header-block.icon {
+		font-size: 24px;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer .social-medias {
+		flex-direction: column;
+	}
+}
