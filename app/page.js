@@ -1,12 +1,13 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 const emojiArray = [
 	"🥬", "🥐", "🥨", "🧀", "🍳", "🥞", "🍗", "🍖", "🍔", "🍕",
-	"🥗", "🥙", "🥪", "🌮", "🌯", "🫕", "🥘", "🫕", "🍝", "🍜",
+	"🥗", "🥙", "🥪", "🌮", "🌯", "🥘", "🍝", "🍜",
 	"🍛", "🍤", "🍙", "🍘", "🍧", "🥧", "🍰", "🍦", "🍮", "🍪",
 	"🍩", "🍱", "🧆"
 ];
@@ -20,6 +21,13 @@ function getRandomEmojis() {
 
 export default function Home() {
 	const [selectedEmojis, setSelectedEmojis] = useState([]);
+
+	const scrollToSection = (target) => {
+		const element = document.getElementById(target);
+		if (element) {
+			window.scrollTo({ top: element.offsetTop - 50, behavior: "smooth" });
+		}
+	};
 
 	useEffect(() => {
 		setSelectedEmojis(getRandomEmojis())
@@ -53,9 +61,9 @@ export default function Home() {
 				<div className="d-flex">
 					<div className="header-block second mobile-hide">
 						<ul>
-							<li>Почему мы</li>
+							<li onClick={() => scrollToSection("whyUs")}>Почему мы</li>
 
-							<li>Ресторанам</li>
+							<li onClick={() => scrollToSection("forRestaraunts")}>Ресторанам</li>
 						</ul>
 					</div>
 
@@ -157,7 +165,7 @@ export default function Home() {
 					<div className="bottom_center" />
 				</section>
 
-				<section className="block_04">
+				<section className="block_04" id="whyUs">
 					<div className="d-between mb-50">
 						<h4>
 							Почему выбирают <br />
@@ -276,7 +284,7 @@ export default function Home() {
 						<div className="bottom_center" />
 					</div>
 
-					<div className="right_card">
+					<div className="right_card" id="forRestaraunts">
 						<div className="d-flex gap-10">
 							<img src="./star.svg" alt="" />
 							Мы подключим вам всё что нужно!{')'}
@@ -362,17 +370,17 @@ export default function Home() {
 				</div>
 
 				<div className="social-medias">
-					<div className="social-media">
+					<Link className="social-media" href="https://t.me/Xe0nd" target="_blank" >
 						Telegram
 
 						<img src="./telegram.svg" alt="" width={60} height={60} />
-					</div>
+					</Link>
 
-					<div className="social-media">
+					<Link className="social-media" href="https://www.instagram.com/xeond?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
 						Instagram
 
 						<img src="./instagram.svg" alt="" width={60} height={60} />
-					</div>
+					</Link>
 				</div>
 
 				<div className="top_left" />
