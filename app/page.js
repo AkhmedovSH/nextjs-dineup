@@ -91,7 +91,11 @@ export default function Home() {
 							<img src="./play.svg" alt="" />
 							Посмотреть демо-видео
 						</button>
+
+						<div className="top_left" />
+						<div className="bottom_right" />
 					</div>
+
 					<div className="image mobile-hide">
 						<img src="./block_01.png" alt="" />
 					</div>
@@ -147,6 +151,10 @@ export default function Home() {
 							Подтвердите бронирование
 						</div>
 					</div>
+
+					<div className="top_left" />
+					<div className="top_right" />
+					<div className="bottom_center" />
 				</section>
 
 				<section className="block_04">
@@ -263,6 +271,9 @@ export default function Home() {
 							<img src="./play.svg" alt="" />
 							Посмотреть демо-видео
 						</button>
+
+						<div className="top_right" />
+						<div className="bottom_center" />
 					</div>
 
 					<div className="right_card">
@@ -284,6 +295,10 @@ export default function Home() {
 							<img src="./chat.svg" alt="" />
 							Связаться для сотрудничества
 						</button>
+
+
+						<div className="top_left" />
+						<div className="bottom_right" />
 					</div>
 				</section>
 
@@ -359,6 +374,10 @@ export default function Home() {
 						<img src="./instagram.svg" alt="" width={60} height={60} />
 					</div>
 				</div>
+
+				<div className="top_left" />
+				<div className="bottom_right" />
+
 			</footer>
 		</div>
 	);

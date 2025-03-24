@@ -67,6 +67,7 @@ main {
 }
 
 .block_01 .card {
+	position: relative;
 	width: 100%;
 	padding: 50px;
 	border-radius: 100px;
@@ -75,6 +76,29 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	overflow: hidden;
+}
+
+.block_01 .top_left {
+	position: absolute;
+	border-radius: 60px;
+	background: #D9D9D9;
+	filter: blur(200px);
+	left: 0;
+	top: 0;
+	width: 192px;
+	height: 80px;
+}
+
+.block_01 .bottom_right {
+	position: absolute;
+	border-radius: 60px;
+	background: #D9D9D9;
+	filter: blur(200px);
+	right: 0;
+	bottom: 0;
+	width: 192px;
+	height: 80px;
 }
 
 .block_01 .card h1 {
@@ -152,9 +176,44 @@ main {
 }
 
 .block_03 {
+	position: relative;
 	padding: 60px 50px;
 	border-radius: 100px;
 	border: 5px solid #1C1918;
+	overflow: auto;
+}
+
+.block_03 .top_left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
+}
+
+.block_03 .top_right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
+}
+
+.block_03 .bottom_center {
+	position: absolute;
+	right: 20%;
+	bottom: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
 }
 
 .block_03 h3,
@@ -265,6 +324,9 @@ main {
 
 .block_05 .left_card,
 .block_05 .right_card {
+	position: relative;
+	overflow: hidden;
+
 	min-height: 600px;
 	padding: 50px;
 	border-radius: 100px;
@@ -273,6 +335,53 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.block_05 .left_card .top_right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
+}
+
+.block_05 .left_card .bottom_center {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
+}
+
+.block_05 .right_card .top_left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 200px;
+	background: #F00;
+	filter: blur(300px);
+	width: 359px;
+	height: 150px;
+	flex-shrink: 0;
+}
+
+.block_05 .right_card .bottom_right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-radius: 200px;
+	background: #F00;
+	filter: blur(300px);
+	width: 359px;
+	height: 150px;
+	flex-shrink: 0;
 }
 
 .block_05 h5 {
@@ -303,11 +412,39 @@ main {
 }
 
 footer {
+	position: relative;
+	overflow: hidden;
 	margin-top: 100px;
+	padding: 50px;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	border-radius: 100px;
+	background: #1C1918;
+}
+
+footer .top_left {
+	position: absolute;
+	left: 20%;
+	top: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
+}
+
+footer .bottom_right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-radius: 60px;
+	background: #FFF;
+	filter: blur(200px);
+	width: 192px;
+	height: 80px;
 }
 
 footer .custom-flex {
@@ -342,8 +479,8 @@ footer .social-medias {
 }
 
 footer .social-media {
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 250px;
 	padding: 30px;
 	border-radius: 50px;
 	border: 3px solid rgba(250, 244, 230, 0.20);
