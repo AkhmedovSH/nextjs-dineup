@@ -93,7 +93,26 @@ main {
 
 .block_01 .image {
 	width: 100%;
+}
+
+.block_01 .image img {
 	border-radius: 100px;
+}
+
+.block_01 button {
+	height: var(--default-height);
+	width: fit-content;
+	padding: 15px 40px;
+	border-radius: 100px;
+	background: rgba(38, 38, 38, 0.50);
+	backdrop-filter: blur(50px);
+	color: var(--text-color);
+	border: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
 
 .block_02 {
@@ -107,8 +126,8 @@ main {
 	font-size: 58px;
 	font-weight: 500;
 	line-height: 55px;
-	/* 94.828% */
 	letter-spacing: -2.32px;
+	white-space: nowrap;
 }
 
 .block_02 .description {
@@ -119,12 +138,11 @@ main {
 
 	color: rgba(250, 244, 230, 0.60);
 	line-height: normal;
-	letter-spacing: -1.2px;
 }
 
 .block_02 .description .icon {
 	position: absolute;
-	left: -50px;
+	left: -40px;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -236,6 +254,11 @@ main {
 	-webkit-box-orient: vertical;
 }
 
+.block_04 .custom-flex {
+	display: flex;
+	gap: 20px;
+}
+
 .block_05 {
 	display: flex;
 }
@@ -285,6 +308,12 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+footer .custom-flex {
+	display: flex;
+	align-items: center;
+	gap: 30px;
 }
 
 footer .xeond {

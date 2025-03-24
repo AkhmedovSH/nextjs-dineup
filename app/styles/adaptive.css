@@ -1,9 +1,9 @@
 .mobile-hide {
-	display: inherit;
+	display: inherit !important;
 }
 
 .mobile-show {
-	display: none;
+	display: none !important;
 }
 
 @media (max-width: 576px) {
@@ -11,24 +11,14 @@
 		--default-height: 60px;
 	}
 
-	.mobile-hide {
-		display: none;
-	}
-
-	.mobile-show {
-		display: inherit;
+	body {
+		font-size: 16px;
 	}
 
 	.block_01,
 	.block_05,
 	.block_02 {
 		flex-direction: column;
-	}
-
-	.block_04 .d-flex {
-		display: grid !important;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 10px;
 	}
 
 	.header-block.icon {
@@ -41,5 +31,141 @@
 
 	footer .social-medias {
 		flex-direction: column;
+	}
+
+	.block_01 .card {
+		padding: 25px;
+		border-radius: 50px;
+		min-height: 380px;
+	}
+
+	.block_01 .card h1 {
+		font-size: 32px;
+		line-height: 30px;
+	}
+
+	.block_01 button {
+		padding: 15px 20px;
+	}
+
+	.block_01 .image img {
+		border-radius: 50px;
+	}
+
+	.block_03 {
+		padding: 25px;
+		border-radius: 50px;
+	}
+
+	.block_03 .d-between {
+		align-items: start;
+		flex-direction: column;
+	}
+
+	.block_03 .steps {
+		flex-direction: column;
+	}
+
+	.block_02 h2, .block_02 .title {
+		font-size: 32px;
+		line-height: 30px;
+	}
+
+	.block_03 h3, .block_03 .title,
+	.block_03 .description {
+		font-size: 32px;
+		line-height: 30px;
+	}
+
+	.block_04 h4 {
+		font-size: 32px;
+		line-height: 30px;
+		letter-spacing: -1.28px;
+	}
+
+	.block_04 .custom-flex {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.block_04 .custom-flex> :last-child:nth-child(odd) {
+		width: 50% !important;
+		margin: auto;
+		grid-column: span 2;
+	}
+
+	.block_04 .card {
+		font-size: 15px;
+	}
+
+	.block_04 .icon {
+		width: 100px;
+		height: 100px;
+		font-size: 32px;
+	}
+
+	.block_04 .description {
+		font-size: 16px;
+	}
+
+	.block_05 .left_card,
+	.block_05 .right_card {
+		min-height: 380px;
+		padding: 25px;
+		border-radius: 50px;
+	}
+
+	.block_05 h5 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+
+	.block_05 button {
+		padding: 15px 20px;
+	}
+
+	footer .custom-flex {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+
+	footer .xeond,
+	footer .xeond span.year {
+		font-size: 32px;
+	}
+
+	footer .xeond span {
+		font-size: 14px;
+	}
+
+	footer .social-medias {
+		width: 100%;
+	}
+
+	footer .social-media {
+		padding: 25px;
+		height: 150px;
+		width: 100%;
+
+		font-size: 24px;
+	}
+
+	footer .social-media img {
+		width: 42px;
+		height: 42px;
+	}
+}
+
+@media (max-width: 576px) {
+	.mobile-hide {
+		display: none !important;
+	}
+
+	.mobile-show {
+		display: inherit !important;
 	}
 }

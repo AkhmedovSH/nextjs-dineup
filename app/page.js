@@ -87,10 +87,10 @@ export default function Home() {
 							</p>
 						</div>
 
-						<div className="d-flex gap-20">
+						<button>
 							<img src="./play.svg" alt="" />
 							Посмотреть демо-видео
-						</div>
+						</button>
 					</div>
 					<div className="image mobile-hide">
 						<img src="./block_01.png" alt="" />
@@ -156,7 +156,7 @@ export default function Home() {
 							DineUp
 						</h4>
 
-						<div className="d-flex">
+						<div className="d-flex mobile-hide">
 							<div className="block">
 								{selectedEmojis[2]}
 							</div>
@@ -169,7 +169,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="d-flex gap-20">
+					<div className="custom-flex">
 						<div className="d-center flex-column gap-20 w-100">
 							<div className="icon">
 								📱
@@ -289,7 +289,8 @@ export default function Home() {
 
 				<section className="block_02">
 					<div className="title">
-						Забронируйте свой столик
+						Забронируйте <br />
+						свой столик
 					</div>
 					<div className="description">
 						<p className="text-white position-relative">
@@ -336,7 +337,7 @@ export default function Home() {
 			</main>
 
 			<footer>
-				<div className="d-flex align-items-center gap-30">
+				<div className="custom-flex">
 					<img src="./xeond_logo.png" alt="" />
 
 					<div className="xeond">
