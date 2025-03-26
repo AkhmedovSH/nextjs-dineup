@@ -299,10 +299,12 @@ export default function Home() {
 							</p>
 						</div>
 
-						<button>
-							<img src="./chat.svg" alt="" />
-							Связаться для сотрудничества
-						</button>
+						<Link href="https://t.me/xeoond">
+							<button>
+								<img src="./chat.svg" alt="" />
+								Связаться для сотрудничества
+							</button>
+						</Link>
 
 
 						<div className="top_left" />
