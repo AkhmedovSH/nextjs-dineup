@@ -374,34 +374,36 @@ export default function Home() {
 				</Squircle>
 			</main>
 
-			<footer>
-				<div className="custom-flex">
-					<img src="./xeond_logo.png" alt="Xeond лого" />
+			<Squircle cornerRadius={borderRadius}>
+				<footer>
+					<div className="custom-flex">
+						<img src="./xeond_logo.png" alt="Xeond лого" />
 
-					<div className="xeond">
-						<span>designed & developed by</span> <br />
-						XEOND© <span className="year">2025</span>
+						<div className="xeond">
+							<span>designed & developed by</span>
+							<div>XEOND© <span className="year">2025</span></div>
+						</div>
 					</div>
-				</div>
 
-				<div className="social-medias">
-					<Link className="social-media" href="https://t.me/Xe0nd" target="_blank" >
-						Telegram
+					<div className="social-medias">
+						<Link className="social-media" href="https://t.me/Xe0nd" target="_blank" >
+							Telegram
 
-						<img src="./telegram.svg" alt="Telegram" width={60} height={60} />
-					</Link>
+							<img src="./telegram.svg" alt="Telegram" width={60} height={60} />
+						</Link>
 
-					<Link className="social-media" href="https://www.instagram.com/xeond?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-						Instagram
+						<Link className="social-media" href="https://www.instagram.com/xeond?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+							Instagram
 
-						<img src="./instagram.svg" alt="Instagram" width={60} height={60} />
-					</Link>
-				</div>
+							<img src="./instagram.svg" alt="Instagram" width={60} height={60} />
+						</Link>
+					</div>
 
-				<div className="top_left" />
-				<div className="bottom_right" />
+					<div className="top_left" />
+					<div className="bottom_right" />
 
-			</footer>
+				</footer>
+			</Squircle>
 		</div>
 	);
 }

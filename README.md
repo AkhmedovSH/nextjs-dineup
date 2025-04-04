@@ -7,4 +7,3 @@ sudo npm install
 sudo npm run build
 
 sudo pm2 restart all
-

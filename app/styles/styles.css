@@ -470,6 +470,10 @@ footer .xeond {
 	font-weight: 600;
 	text-transform: uppercase;
 	line-height: normal;
+
+	display: flex;
+	flex-direction: column;
+	
 }
 
 footer .xeond span {
