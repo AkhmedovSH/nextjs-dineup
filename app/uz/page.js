@@ -61,14 +61,14 @@ export default function Home() {
 				<div className="d-flex">
 					<div className="header-block second mobile-hide">
 						<ul>
-							<li onClick={() => scrollToSection("whyUs")}>Почему мы</li>
+							<li onClick={() => scrollToSection("whyUs")}>Nega biz</li>
 
-							<li onClick={() => scrollToSection("forRestaraunts")}>Ресторанам</li>
+							<li onClick={() => scrollToSection("forRestaraunts")}>Restoranlar uchun</li>
 						</ul>
 					</div>
 
-					<Link href="/uz" className="header-block language">
-						UZ
+					<Link href="/" className="header-block language">
+						RU
 					</Link>
 				</div>
 			</header>
@@ -77,27 +77,26 @@ export default function Home() {
 
 				<section className="block_01">
 					<div className="image mobile-show">
-						<img src="./block_01.png" alt="Картинка приложения DineUp" />
+						<img src="/block_01.png" alt="Картинка приложения DineUp" />
 					</div>
 					<div className="card">
 						<div className="d-flex gap-10">
-							<Image src="./star.svg" alt="Звездочка" width={32} height={36} />
-							Скоро доступно в Ташкенте
+							<Image src="/star.svg" alt="Звездочка" width={32} height={36} />
+							Tez kunda Toshkentda
 						</div>
 
 						<div>
 							<h1>
-								Забронируйте
-								столик за секунды.
+								Bir necha soniya ichida stolni bron qiling.
 							</h1>
 							<p className="description">
-								Cовременный способ забронировать столик в любимом ресторане
+								Sevimli restoraningizda stolni bron qilishning zamonaviy usuli
 							</p>
 						</div>
 
 						<button>
-							<img src="./play.svg" alt="Play" />
-							Посмотреть демо-видео
+							<img src="/play.svg" alt="Play" />
+							Demo videoni tomosha qiling
 						</button>
 
 						<div className="top_left" />
@@ -105,26 +104,25 @@ export default function Home() {
 					</div>
 
 					<div className="image mobile-hide">
-						<img src="./block_01.png" alt="Картинка приложения DineUp" />
+						<img src="/block_01.png" alt="Картинка приложения DineUp" />
 					</div>
 				</section>
 
 				<section className="block_02">
 					<h2>
-						Что это вообще за <br /> приложение?
+						Bu qanday <br /> ilova?
 					</h2>
 					<div className="description">
 						<p>
-							Мы знаем, как утомляют бесконечные звонки, переписки и ожидание подтверждения брони. DineUp создан для того, чтобы быстро, удобно
-							и без лишнего стресса бронировать столик в пару кликов.
+							Biz cheksiz qo'ng'iroqlar qilish, xabarlar yuborish va bronni tasdiqlashni kutish qanchalik charchaganligini bilamiz. DineUp bir necha marta bosish orqali stolni bron qilishni tez, qulay va stresssiz qilish uchun yaratilgan.
 						</p>
 						<p className="text-white position-relative">
-							Поход в ресторан должен быть таким же простым и приятным, как заказ такси или доставки еды.
+							Restoranga borish taksiga buyurtma berish yoki oziq-ovqat yetkazib berish kabi oson va yoqimli bo'lishi kerak.
 
-							<img src="./star.svg" alt="Звездочка" className="icon" width={32} height={32} />
+							<img src="/star.svg" alt="Звездочка" className="icon" width={32} height={32} />
 						</p>
 						<p>
-							DineUp — это когда ужин начинается ещё до того, как вы сели за стол.
+							DineUp - bu kechki ovqat siz stolga o'tirishdan oldin boshlanadi.
 						</p>
 					</div>
 				</section>
@@ -132,31 +130,31 @@ export default function Home() {
 				<section className="block_03">
 					<div className="d-between mb-50">
 						<h3>
-							Как это работает?
+							U qanday ishlaydi?
 						</h3>
 
 						<div className="description">
-							всего 3 шага
+							faqat 3 qadam
 						</div>
 					</div>
 
 					<div className="steps">
 						<div className="step">
-							<img src="./step_1.png" alt="1 Шаг приложения" />
+							<img src="/step_1.png" alt="1 Шаг приложения" />
 
-							Откройте приложение
+							Ilovani oching
 						</div>
 
 						<div className="step">
-							<img src="./step_2.png" alt="2 Шаг приложения" />
+							<img src="/step_2.png" alt="2 Шаг приложения" />
 
-							Выберите ресторан и время
+							Restoran va vaqtni tanlang
 						</div>
 
 						<div className="step">
-							<img src="./step_3.png" alt="3 Шаг приложения" />
+							<img src="/step_3.png" alt="3 Шаг приложения" />
 
-							Подтвердите бронирование
+							Bandlovingizni tasdiqlang
 						</div>
 					</div>
 
@@ -168,7 +166,7 @@ export default function Home() {
 				<section className="block_04" id="whyUs">
 					<div className="d-between mb-50">
 						<h4>
-							Почему выбирают <br />
+							Nima uchun <br />
 							DineUp
 						</h4>
 
@@ -180,7 +178,7 @@ export default function Home() {
 								{selectedEmojis[3]}
 							</div>
 							<div className="block">
-								<img src="./logo.svg" alt="DineUp лого" />
+								<img src="/logo.svg" alt="DineUp лого" />
 							</div>
 						</div>
 					</div>
@@ -191,12 +189,11 @@ export default function Home() {
 								📱
 							</div>
 							<p className="card">
-								Всё в одном <br />
-								приложении
+								Hammasi bitta <br />
+								ilovada
 							</p>
 							<p className="description">
-								От поиска
-								до подтверждения
+								Qidiruvdan tasdiqlashgacha
 							</p>
 						</div>
 
@@ -205,12 +202,10 @@ export default function Home() {
 								⏱️
 							</div>
 							<p className="card">
-								Мгновенное
-								бронирование
+								Tezkor bron qilish
 							</p>
 							<p className="description">
-								И без лишней
-								коммуникации
+								Va keraksiz aloqasiz
 							</p>
 						</div>
 
@@ -219,12 +214,10 @@ export default function Home() {
 								📍
 							</div>
 							<p className="card">
-								Только самое
-								актуальное
+								Faqat eng dolzarb
 							</p>
 							<p className="description">
-								Актуальные данные
-								и свободные слоты
+								Joriy ma'lumotlar va bepul slotlar
 							</p>
 						</div>
 
@@ -233,11 +226,10 @@ export default function Home() {
 								🍴
 							</div>
 							<p className="card">
-								Повод <br />
-								для всего
+								Hamma narsaga sabab
 							</p>
 							<p className="description">
-								Подходит для обедов, ужинов, мероприятий
+								Tushlik, kechki ovqat, tadbirlar uchun javob beradi
 							</p>
 						</div>
 
@@ -246,12 +238,10 @@ export default function Home() {
 								💬
 							</div>
 							<p className="card">
-								Уведомления
-								и напоминания
+								Bildirishnomalar va eslatmalar
 							</p>
 							<p className="description">
-								Мы уведомим вас
-								о всех статусах брони
+								Biz sizni barcha bronlash holatlari haqida xabardor qilamiz.
 							</p>
 						</div>
 
@@ -261,23 +251,22 @@ export default function Home() {
 				<section className="block_05">
 					<div className="left_card">
 						<div className="d-flex gap-10">
-							<img src="./star.svg" alt="Звездочка" />
-							Приложение будет доступно в AppStore
-							и Google Play Store
+							<img src="/star.svg" alt="Звездочка" />
+							Ilova AppStore va Google Play do'konlarida mavjud bo'ladi
 						</div>
 
 						<div>
 							<h5>
-								Гостям
+								Mehmonlar uchun
 							</h5>
 							<p className="description">
-								Быстро бронируйте столики в любимых местах — удобно и без лишней суеты.
+								O'zingiz yoqtirgan joylardan tezda stollarni bron qiling - qulay va keraksiz shovqinsiz.
 							</p>
 						</div>
 
 						<button>
-							<img src="./play.svg" alt="Play" />
-							Посмотреть демо-видео
+							<img src="/play.svg" alt="Play" />
+							Demo videoni tomosha qiling
 						</button>
 
 						<div className="top_right" />
@@ -286,13 +275,13 @@ export default function Home() {
 
 					<div className="right_card" id="forRestaraunts">
 						<div className="d-flex gap-10">
-							<img src="./star.svg" alt="Звездочка" />
-							Мы подключим вам всё что нужно!{')'}
+							<img src="/star.svg" alt="Звездочка" />
+							Biz sizni barcha kerakli narsalar bilan bog'laymiz!!{')'}
 						</div>
 
 						<div>
 							<h5>
-								Ресторанам
+								Restoranlar uchun
 							</h5>
 							<p className="description">
 								Получайте подтверждённые брони, управляйте посадкой и автоматизируйте процесс.
@@ -301,8 +290,8 @@ export default function Home() {
 
 						<Link href="https://t.me/xeoond">
 							<button>
-								<img src="./chat.svg" alt="Чат" />
-								Связаться для сотрудничества
+								<img src="/chat.svg" alt="Чат" />
+								Hamkorlik uchun murojaat qiling
 							</button>
 						</Link>
 
@@ -314,26 +303,25 @@ export default function Home() {
 
 				<section className="block_02">
 					<div className="title">
-						Забронируйте <br />
-						свой столик
+						Stolingizni  <br />
+						bron qiling
 					</div>
 					<div className="description">
 						<p className="text-white position-relative">
-							Присоединяйтесь к DineUp и откройте для себя новый уровень комфорта.
+							DineUp-ga qo'shiling va qulaylikning yangi darajasini kashf eting.
 
-							<img src="./star.svg" alt="Звездочка" className="icon" width={32} height={32} />
+							<img src="/star.svg" alt="Звездочка" className="icon" width={32} height={32} />
 						</p>
 						<p>
-							Бронируйте столики без звонков, переписок и лишней суеты — быстро, удобно и в пару кликов. Никаких непредсказуемостей — только чёткое подтверждение и удовольствие от момента.
-						</p>
+							Jadvallarni qo'ng'iroqlar, yozishmalar va keraksiz shov-shuvlarsiz bron qiling - tez, qulay va bir necha marta bosish. Hech qanday oldindan aytib bo'lmaydigan narsa - faqat aniq tasdiqlash va hozirgi paytdan zavqlanish.						</p>
 
 						<p className="text-white">
-							Скоро доступно на площадках
+							Tez orada platformalarda
 						</p>
 
 						<div className="d-flex gap-10">
-							<img src="./google_play.svg" alt="Google play" />
-							<img src="./app_store.svg" alt="App store" />
+							<img src="/google_play.svg" alt="Google play" />
+							<img src="/app_store.svg" alt="App store" />
 						</div>
 					</div>
 				</section>
@@ -341,7 +329,7 @@ export default function Home() {
 				<section className="block_03">
 					<div className="d-between mb-50">
 						<div className="title">
-							Скриншоты
+							Skrinshotlar
 						</div>
 
 						<div className="description">
@@ -350,12 +338,12 @@ export default function Home() {
 					</div>
 
 					<ScrollContainer className="images">
-						<img src="./screen_1.png" alt="Скриншот приложения 1" />
-						<img src="./screen_2.png" alt="Скриншот приложения 2" />
-						<img src="./screen_3.png" alt="Скриншот приложения 3" />
-						<img src="./screen_4.png" alt="Скриншот приложения 4" />
-						<img src="./screen_5.png" alt="Скриншот приложения 5" />
-						<img src="./screen_6.png" alt="Скриншот приложения 6" />
+						<img src="/screen_1.png" alt="Скриншот приложения 1" />
+						<img src="/screen_2.png" alt="Скриншот приложения 2" />
+						<img src="/screen_3.png" alt="Скриншот приложения 3" />
+						<img src="/screen_4.png" alt="Скриншот приложения 4" />
+						<img src="/screen_5.png" alt="Скриншот приложения 5" />
+						<img src="/screen_6.png" alt="Скриншот приложения 6" />
 					</ScrollContainer>
 				</section>
 
@@ -363,7 +351,7 @@ export default function Home() {
 
 			<footer>
 				<div className="custom-flex">
-					<img src="./xeond_logo.png" alt="Xeond лого" />
+					<img src="/xeond_logo.png" alt="Xeond лого" />
 
 					<div className="xeond">
 						<span>designed & developed by</span> <br />
@@ -375,13 +363,13 @@ export default function Home() {
 					<Link className="social-media" href="https://t.me/Xe0nd" target="_blank" >
 						Telegram
 
-						<img src="./telegram.svg" alt="Telegram" width={60} height={60} />
+						<img src="/telegram.svg" alt="Telegram" width={60} height={60} />
 					</Link>
 
 					<Link className="social-media" href="https://www.instagram.com/xeond?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
 						Instagram
 
-						<img src="./instagram.svg" alt="Instagram" width={60} height={60} />
+						<img src="/instagram.svg" alt="Instagram" width={60} height={60} />
 					</Link>
 				</div>
 

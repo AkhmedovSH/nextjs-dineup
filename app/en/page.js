@@ -61,9 +61,9 @@ export default function Home() {
 				<div className="d-flex">
 					<div className="header-block second mobile-hide">
 						<ul>
-							<li onClick={() => scrollToSection("whyUs")}>Почему мы</li>
+							<li onClick={() => scrollToSection("whyUs")}>Why us</li>
 
-							<li onClick={() => scrollToSection("forRestaraunts")}>Ресторанам</li>
+							<li onClick={() => scrollToSection("forRestaraunts")}>For restaurants</li>
 						</ul>
 					</div>
 
@@ -82,22 +82,21 @@ export default function Home() {
 					<div className="card">
 						<div className="d-flex gap-10">
 							<Image src="./star.svg" alt="Звездочка" width={32} height={36} />
-							Скоро доступно в Ташкенте
+							Coming soon in Tashkent
 						</div>
 
 						<div>
 							<h1>
-								Забронируйте
-								столик за секунды.
+								Book a table in seconds.
 							</h1>
 							<p className="description">
-								Cовременный способ забронировать столик в любимом ресторане
+								A modern way to reserve a table at your favorite restaurant
 							</p>
 						</div>
 
 						<button>
 							<img src="./play.svg" alt="Play" />
-							Посмотреть демо-видео
+							Watch demo video
 						</button>
 
 						<div className="top_left" />
@@ -111,20 +110,19 @@ export default function Home() {
 
 				<section className="block_02">
 					<h2>
-						Что это вообще за <br /> приложение?
+						What kind of app is this <br /> anyway?
 					</h2>
 					<div className="description">
 						<p>
-							Мы знаем, как утомляют бесконечные звонки, переписки и ожидание подтверждения брони. DineUp создан для того, чтобы быстро, удобно
-							и без лишнего стресса бронировать столик в пару кликов.
+							We know how tiring it is to call, text and wait for a reservation confirmation. DineUp is designed to make it quick, convenient and stress-free to book a table in a couple of clicks.
 						</p>
 						<p className="text-white position-relative">
-							Поход в ресторан должен быть таким же простым и приятным, как заказ такси или доставки еды.
+							Going to a restaurant should be as easy and enjoyable as ordering a taxi or food delivery.
 
 							<img src="./star.svg" alt="Звездочка" className="icon" width={32} height={32} />
 						</p>
 						<p>
-							DineUp — это когда ужин начинается ещё до того, как вы сели за стол.
+							DineUp is when dinner starts before you even sit down at the table.
 						</p>
 					</div>
 				</section>
@@ -132,11 +130,11 @@ export default function Home() {
 				<section className="block_03">
 					<div className="d-between mb-50">
 						<h3>
-							Как это работает?
+							How does this work?
 						</h3>
 
 						<div className="description">
-							всего 3 шага
+							just 3 steps
 						</div>
 					</div>
 
@@ -144,19 +142,19 @@ export default function Home() {
 						<div className="step">
 							<img src="./step_1.png" alt="1 Шаг приложения" />
 
-							Откройте приложение
+							Open the application
 						</div>
 
 						<div className="step">
 							<img src="./step_2.png" alt="2 Шаг приложения" />
 
-							Выберите ресторан и время
+							Select a restaurant and time
 						</div>
 
 						<div className="step">
 							<img src="./step_3.png" alt="3 Шаг приложения" />
 
-							Подтвердите бронирование
+							Confirm your booking
 						</div>
 					</div>
 
@@ -168,7 +166,7 @@ export default function Home() {
 				<section className="block_04" id="whyUs">
 					<div className="d-between mb-50">
 						<h4>
-							Почему выбирают <br />
+							Why choose <br />
 							DineUp
 						</h4>
 
@@ -191,12 +189,11 @@ export default function Home() {
 								📱
 							</div>
 							<p className="card">
-								Всё в одном <br />
-								приложении
+								All in one <br />
+								app
 							</p>
 							<p className="description">
-								От поиска
-								до подтверждения
+								From search to confirmation
 							</p>
 						</div>
 
@@ -205,12 +202,10 @@ export default function Home() {
 								⏱️
 							</div>
 							<p className="card">
-								Мгновенное
-								бронирование
+								Instant booking
 							</p>
 							<p className="description">
-								И без лишней
-								коммуникации
+								And without unnecessary communication
 							</p>
 						</div>
 
@@ -219,12 +214,10 @@ export default function Home() {
 								📍
 							</div>
 							<p className="card">
-								Только самое
-								актуальное
+								Only the most relevant
 							</p>
 							<p className="description">
-								Актуальные данные
-								и свободные слоты
+								Current data and free slots
 							</p>
 						</div>
 
@@ -233,11 +226,11 @@ export default function Home() {
 								🍴
 							</div>
 							<p className="card">
-								Повод <br />
-								для всего
+								A reason <br />
+								for everything
 							</p>
 							<p className="description">
-								Подходит для обедов, ужинов, мероприятий
+								Suitable for lunches, dinners, events
 							</p>
 						</div>
 
@@ -246,12 +239,10 @@ export default function Home() {
 								💬
 							</div>
 							<p className="card">
-								Уведомления
-								и напоминания
+								Notifications and reminders
 							</p>
 							<p className="description">
-								Мы уведомим вас
-								о всех статусах брони
+								We will notify you of all booking statuses.
 							</p>
 						</div>
 
@@ -262,22 +253,21 @@ export default function Home() {
 					<div className="left_card">
 						<div className="d-flex gap-10">
 							<img src="./star.svg" alt="Звездочка" />
-							Приложение будет доступно в AppStore
-							и Google Play Store
+							The application will be available in the AppStore and Google Play Store
 						</div>
 
 						<div>
 							<h5>
-								Гостям
+								For guests
 							</h5>
 							<p className="description">
-								Быстро бронируйте столики в любимых местах — удобно и без лишней суеты.
+								Quickly book tables at your favorite places - conveniently and without unnecessary fuss.
 							</p>
 						</div>
 
 						<button>
 							<img src="./play.svg" alt="Play" />
-							Посмотреть демо-видео
+							Watch demo video
 						</button>
 
 						<div className="top_right" />
@@ -287,22 +277,22 @@ export default function Home() {
 					<div className="right_card" id="forRestaraunts">
 						<div className="d-flex gap-10">
 							<img src="./star.svg" alt="Звездочка" />
-							Мы подключим вам всё что нужно!{')'}
+							We will connect you with everything you need!{')'}
 						</div>
 
 						<div>
 							<h5>
-								Ресторанам
+								For restaurants
 							</h5>
 							<p className="description">
-								Получайте подтверждённые брони, управляйте посадкой и автоматизируйте процесс.
+								Get confirmed bookings, manage boarding and automate the process.
 							</p>
 						</div>
 
 						<Link href="https://t.me/xeoond">
 							<button>
 								<img src="./chat.svg" alt="Чат" />
-								Связаться для сотрудничества
+								Contact for cooperation
 							</button>
 						</Link>
 
@@ -314,21 +304,21 @@ export default function Home() {
 
 				<section className="block_02">
 					<div className="title">
-						Забронируйте <br />
-						свой столик
+						Book your <br />
+						table
 					</div>
 					<div className="description">
 						<p className="text-white position-relative">
-							Присоединяйтесь к DineUp и откройте для себя новый уровень комфорта.
+							Join DineUp and discover a new level of comfort.
 
 							<img src="./star.svg" alt="Звездочка" className="icon" width={32} height={32} />
 						</p>
 						<p>
-							Бронируйте столики без звонков, переписок и лишней суеты — быстро, удобно и в пару кликов. Никаких непредсказуемостей — только чёткое подтверждение и удовольствие от момента.
+							Book tables without calls, correspondence and unnecessary fuss - quickly, conveniently and in a couple of clicks. No unpredictability - only clear confirmation and pleasure from the moment.
 						</p>
 
 						<p className="text-white">
-							Скоро доступно на площадках
+							Coming soon to platforms
 						</p>
 
 						<div className="d-flex gap-10">
@@ -341,7 +331,7 @@ export default function Home() {
 				<section className="block_03">
 					<div className="d-between mb-50">
 						<div className="title">
-							Скриншоты
+							Screenshots
 						</div>
 
 						<div className="description">
