@@ -33,6 +33,12 @@
 		flex-direction: column;
 	}
 
+	.block_01,
+	.block_05 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.block_01 .card {
 		padding: 25px;
 		border-radius: 50px;
@@ -179,6 +185,11 @@
 	.block_05 .right_card .bottom_right {
 		width: 169px;
 		height: 70px;
+	}
+
+	.block_05 .right_card,
+	.block_01 .image {
+		margin-left: 0;
 	}
 
 	footer {

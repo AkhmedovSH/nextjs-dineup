@@ -64,7 +64,8 @@ main {
 }
 
 .block_01 {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .block_01 .card {
@@ -118,6 +119,7 @@ main {
 
 .block_01 .image {
 	width: 100%;
+	margin-left: -2px;
 }
 
 .block_01 .image img {
@@ -322,7 +324,8 @@ main {
 }
 
 .block_05 {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .block_05 .left_card,
@@ -338,6 +341,10 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.block_05 .right_card {
+	margin-left: -2px;
 }
 
 .block_05 .left_card .top_right {

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ScrollContainer from 'react-indiana-drag-scroll'
+import { Squircle } from 'corner-smoothing'
 
 const emojiArray = [
 	"🥬", "🥐", "🥨", "🧀", "🍳", "🥞", "🍗", "🍖", "🍔", "🍕",
@@ -20,6 +21,7 @@ function getRandomEmojis() {
 }
 
 export default function Home() {
+	const [borderRadius, setBorderRadius] = useState(50);
 	const [selectedEmojis, setSelectedEmojis] = useState([]);
 
 	const scrollToSection = (target) => {
@@ -32,6 +34,14 @@ export default function Home() {
 	useEffect(() => {
 		setSelectedEmojis(getRandomEmojis())
 	}, []);
+
+	useEffect(() => {
+		if (window.innerWidth <= 576) {
+			setBorderRadius(50)
+		} else {
+			setBorderRadius(100)
+		}
+	}, [window.innerWidth]);
 
 	return (
 		<div className="container">
@@ -76,10 +86,10 @@ export default function Home() {
 			<main>
 
 				<section className="block_01">
-					<div className="image mobile-show">
+					<Squircle cornerRadius={borderRadius} className="image mobile-show">
 						<img src="./block_01.png" alt="Картинка приложения DineUp" />
-					</div>
-					<div className="card">
+					</Squircle>
+					<Squircle cornerRadius={borderRadius} className="card">
 						<div className="d-flex gap-10">
 							<Image src="./star.svg" alt="Звездочка" width={32} height={36} />
 							Скоро доступно в Ташкенте
@@ -102,11 +112,11 @@ export default function Home() {
 
 						<div className="top_left" />
 						<div className="bottom_right" />
-					</div>
+					</Squircle>
 
-					<div className="image mobile-hide">
+					<Squircle cornerRadius={borderRadius} className="image mobile-hide">
 						<img src="./block_01.png" alt="Картинка приложения DineUp" />
-					</div>
+					</Squircle>
 				</section>
 
 				<section className="block_02">
@@ -129,41 +139,43 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="block_03">
-					<div className="d-between mb-50">
-						<h3>
-							Как это работает?
-						</h3>
+				<Squircle cornerRadius={borderRadius}>
+					<section className="block_03">
+						<div className="d-between mb-50">
+							<h3>
+								Как это работает?
+							</h3>
 
-						<div className="description">
-							всего 3 шага
-						</div>
-					</div>
-
-					<div className="steps">
-						<div className="step">
-							<img src="./step_1.png" alt="1 Шаг приложения" />
-
-							Откройте приложение
+							<div className="description">
+								всего 3 шага
+							</div>
 						</div>
 
-						<div className="step">
-							<img src="./step_2.png" alt="2 Шаг приложения" />
+						<div className="steps">
+							<div className="step">
+								<img src="./step_1.png" alt="1 Шаг приложения" />
 
-							Выберите ресторан и время
+								Откройте приложение
+							</div>
+
+							<div className="step">
+								<img src="./step_2.png" alt="2 Шаг приложения" />
+
+								Выберите ресторан и время
+							</div>
+
+							<div className="step">
+								<img src="./step_3.png" alt="3 Шаг приложения" />
+
+								Подтвердите бронирование
+							</div>
 						</div>
 
-						<div className="step">
-							<img src="./step_3.png" alt="3 Шаг приложения" />
-
-							Подтвердите бронирование
-						</div>
-					</div>
-
-					<div className="top_left" />
-					<div className="top_right" />
-					<div className="bottom_center" />
-				</section>
+						<div className="top_left" />
+						<div className="top_right" />
+						<div className="bottom_center" />
+					</section>
+				</Squircle>
 
 				<section className="block_04" id="whyUs">
 					<div className="d-between mb-50">
@@ -259,7 +271,7 @@ export default function Home() {
 				</section>
 
 				<section className="block_05">
-					<div className="left_card">
+					<Squircle cornerRadius={borderRadius} className="left_card">
 						<div className="d-flex gap-10">
 							<img src="./star.svg" alt="Звездочка" />
 							Приложение будет доступно в AppStore
@@ -282,12 +294,12 @@ export default function Home() {
 
 						<div className="top_right" />
 						<div className="bottom_center" />
-					</div>
+					</Squircle>
 
-					<div className="right_card" id="forRestaraunts">
-						<div className="d-flex gap-10">
+					<Squircle cornerRadius={borderRadius} className="right_card" id="forRestaraunts">
+						<div className="d-flex align-items-start gap-10">
 							<img src="./star.svg" alt="Звездочка" />
-							Мы подключим вам всё что нужно!{')'}
+							Мы подключим вам всё что нужно!{')'} <br /> <br />
 						</div>
 
 						<div>
@@ -309,7 +321,7 @@ export default function Home() {
 
 						<div className="top_left" />
 						<div className="bottom_right" />
-					</div>
+					</Squircle>
 				</section>
 
 				<section className="block_02">
@@ -338,27 +350,28 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="block_03">
-					<div className="d-between mb-50">
-						<div className="title">
-							Скриншоты
+				<Squircle cornerRadius={borderRadius}>
+					<section className="block_03">
+						<div className="d-between mb-50">
+							<div className="title">
+								Скриншоты
+							</div>
+
+							<div className="description">
+								v0.1
+							</div>
 						</div>
 
-						<div className="description">
-							v0.1
-						</div>
-					</div>
-
-					<ScrollContainer className="images">
-						<img src="./screen_1.png" alt="Скриншот приложения 1" />
-						<img src="./screen_2.png" alt="Скриншот приложения 2" />
-						<img src="./screen_3.png" alt="Скриншот приложения 3" />
-						<img src="./screen_4.png" alt="Скриншот приложения 4" />
-						<img src="./screen_5.png" alt="Скриншот приложения 5" />
-						<img src="./screen_6.png" alt="Скриншот приложения 6" />
-					</ScrollContainer>
-				</section>
-
+						<ScrollContainer className="images">
+							<img src="./screen_1.png" alt="Скриншот приложения 1" />
+							<img src="./screen_2.png" alt="Скриншот приложения 2" />
+							<img src="./screen_3.png" alt="Скриншот приложения 3" />
+							<img src="./screen_4.png" alt="Скриншот приложения 4" />
+							<img src="./screen_5.png" alt="Скриншот приложения 5" />
+							<img src="./screen_6.png" alt="Скриншот приложения 6" />
+						</ScrollContainer>
+					</section>
+				</Squircle>
 			</main>
 
 			<footer>
